@@ -1,0 +1,117 @@
+@import './src/sass/variables';
+@import './src/sass/mixin';
+
+.projects {
+  min-height: 100vh;
+  padding: $paddingBig 0;
+  background-color: $bgColor;
+  @include mediaLaptop {
+    min-height: 100%;
+  }
+}
+
+.projects_items {
+  display: flex;
+  justify-content: space-evenly;
+  @include mediaTablet {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+.project {
+  display: flex;
+  background-color: $bgSecondColor;
+  flex-direction: column;
+  flex-basis: 31%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 20px 20px 5px rgb(0 0 0 / 12%);
+
+  @include mediaTablet {
+    width: 60%;
+  }
+  @include mediaMobile {
+    width: 90%;
+  }
+
+  .pic {
+    position: relative;
+
+    .pic_bg {
+      aspect-ratio: 5 / 5;
+      object-fit: cover;
+      filter: brightness(45%);
+
+      @include mediaTablet {
+        aspect-ratio: 5 / 2;
+      }
+    }
+
+    .links {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      column-gap: 20px;
+
+      .btn {
+        display: inline-block;
+        padding: 7px 24px 9px;
+        background-color: $bgSecondColor;
+        border: 2px solid $navLinkHoverColor;
+        color: $navLinkHoverColor;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: $transition;
+
+        &:hover,
+        &:active {
+          background-color: $navLinkHoverColor;
+          color: $bgSecondColor;
+          transition: $transition;
+        }
+
+        @include mediaLaptop {
+          font-size: 1.4rem;
+          padding: 8px 18px 9px;
+        }
+      }
+    }
+  }
+
+  .project_title {
+    padding: 15px $paddingSmall 0;
+    font-size: 2.0rem;
+
+    @include mediaLaptop {
+      font-size: 1.8rem;
+    }
+    @include mediaTablet {
+      font-size: 1.6rem;
+    }
+    @include mediaMobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  .project_description {
+    padding: 15px $paddingSmall;
+    font-size: 1.6rem;
+    color: $lightColor;
+
+    @include mediaLaptop {
+      font-size: 1.4rem;
+    }
+    @include mediaTablet {
+      font-size: 1.2rem;
+    }
+    @include mediaMobile {
+      font-size: 1.0rem;
+    }
+  }
+}

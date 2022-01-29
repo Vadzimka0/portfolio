@@ -1,0 +1,45 @@
+@mixin text($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}
+
+@mixin bgSettings() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin mediaLaptop {
+  @media (max-width: $contentWidth) {
+    @content
+  }
+}
+
+@mixin mediaTablet {
+  @media (max-width: $tabletWidth) {
+    @content;
+  }
+}
+
+@mixin mediaMobile {
+  @media (max-width: $mobileBigWidth) {
+    @content
+  }
+}
+
+@mixin mediaMobileSmall {
+  @media (max-width: $mobileSmallWidth) {
+    @content
+  }
+}
+

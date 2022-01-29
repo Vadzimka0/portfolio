@@ -1,0 +1,97 @@
+@import './src/sass/variables';
+@import './src/sass/mixin';
+
+.contacts {
+  padding: $paddingBig 0;
+  min-height: 100vh;
+  @include mediaLaptop {
+    min-height: 100%;
+  }
+}
+
+.inputs {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 30px 10px 85px;
+  font-size: 1.8rem;
+  width: 50%;
+
+  @include mediaLaptop {
+    font-size: 1.6rem;
+  }
+  @include mediaTablet {
+    padding: 0 10px 45px;
+    row-gap: 20px;
+    width: 75%;
+  }
+  @include mediaMobile {
+    font-size: 1.4rem;
+    width: 95%;
+  }
+
+  & > * {
+    background-color: $bgColor;
+    padding: 15px 20px;
+    border: 2px solid $skillHoverColor;
+    border-radius: 20px;
+    box-shadow: 0px 8px 8px 5px rgb(0 0 0 / 12%);
+    @include mediaLaptop {
+      padding: 10px 15px;
+    }
+  }
+
+  & > *:focus {
+    outline: 2px solid $skillHoverColor;
+  }
+
+  .textarea {
+    resize: none;
+    min-height: 160px;
+    @include mediaTablet {
+      min-height: 90px;
+    }
+  }
+}
+
+.btn_center {
+  display: flex;
+
+  .btn {
+    margin: auto;
+    background-color: $navLinkHoverColor;
+    color: $bgSecondColor;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 7px 24px 9px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    transition: $transition;
+
+    @include mediaLaptop {
+      font-size: 1.4rem;
+      padding: 8px 18px 9px;
+    }
+
+    &:hover {
+      background-color: $bgSecondColor;
+      border: 2px solid $navLinkHoverColor;
+      color: $navLinkHoverColor;
+      cursor: pointer;
+      transition: $transition;
+    }
+
+    &:active {
+      background-color: #fff;
+      color: #ff9a3c;
+      border: 1px solid #fff;
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

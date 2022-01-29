@@ -1,0 +1,42 @@
+@import './src/sass/variables';
+@import './src/sass/mixin';
+
+.footer {
+  padding: $paddingBig 0 $paddingSmall 0;
+  background-color: $bgColor;
+}
+
+.socials {
+  margin: auto;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+
+  @include mediaTablet {
+    width: 75%;
+  }
+  @include mediaMobile {
+    width: 95%;
+  }
+
+  & a > * {
+    width: 30px;
+    height: 30px;
+    transition: $transition;
+    color: $navLinkHoverColor;
+  }
+
+  & a > *:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    color: $navLinkHoverColor;
+  }
+}
+
+.copyright {
+  width: 60px;
+  padding-top: 75px;
+  margin: auto;
+  display: flex;
+  font-size: 1.2rem;
+}

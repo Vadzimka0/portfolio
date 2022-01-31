@@ -36,12 +36,18 @@
     }
 
     .item {
-      .link {
+      a {
         padding: 10px 5px;
         color: $navLinkColor;
+
         &:hover {
           color: $navLinkHoverColor;
+          cursor: pointer;
         }
+      }
+
+      .active {
+        color: $navLinkHoverColor;
       }
     }
   }

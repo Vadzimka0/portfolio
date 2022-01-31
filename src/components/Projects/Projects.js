@@ -7,7 +7,7 @@ import counter from "../../assets/img/counter.png";
 import piano from "../../assets/img/piano.jpg";
 
 export const Projects = () => (
-  <section className={s.projects}>
+  <section id="projects" className={s.projects}>
     <div className={common.wrapper}>
 
       <h2 className={common.section_title}>Projects</h2>

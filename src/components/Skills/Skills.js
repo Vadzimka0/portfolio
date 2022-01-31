@@ -5,7 +5,7 @@ import {SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, SiTypescript} from "rea
 import Slide from "react-reveal/Slide";
 
 export const Skills = () => (
-  <section className={s.skills}>
+  <section id="skills" className={s.skills}>
     <div className={common.wrapper}>
 
       <h2 className={common.section_title}>Skills</h2>

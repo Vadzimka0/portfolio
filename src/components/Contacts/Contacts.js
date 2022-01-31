@@ -4,7 +4,7 @@ import common from "../common/common.module.scss";
 import Zoom from "react-reveal/Zoom";
 
 export const Contacts = () => (
-  <section className={s.contacts}>
+  <section id="contacts" className={s.contacts}>
     <div className={common.wrapper}>
       <h2 className={common.section_title}>Please, send a message and I'll contact you</h2>
       <Zoom>

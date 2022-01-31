@@ -8,7 +8,6 @@ export const AboutMe = () => (
     <div className={common.wrapper}>
 
       <div className={s.content}>
-
         <div className={s.text}>
           <p>Hi, my name is<br/><span>Vadzim Dzianisik</span></p>
           <p>and i'm a<br/><span>Front-end Developer</span></p>

@@ -4,6 +4,7 @@ import common from "../common/common.module.scss";
 import todo from "../../assets/img/todo.png";
 import cards from "../../assets/img/cards.png";
 import counter from "../../assets/img/counter.png";
+import piano from "../../assets/img/piano.jpg";
 
 export const Projects = () => (
   <section className={s.projects}>
@@ -16,8 +17,10 @@ export const Projects = () => (
           <div className={s.pic}>
             <img className={s.pic_bg} src={todo} alt="react todo"/>
             <div className={s.links}>
-              <a className={s.btn} href="https://Vadzimka0.github.io/todolist-project" target="_blank" rel="noreferrer">Demo</a>
-              <a className={s.btn} href="https://github.com/Vadzimka0/todolist-project" target="_blank" rel="noreferrer">Code</a>
+              <a className={s.btn} href="https://Vadzimka0.github.io/todolist-project" target="_blank"
+                 rel="noreferrer">Demo</a>
+              <a className={s.btn} href="https://github.com/Vadzimka0/todolist-project" target="_blank"
+                 rel="noreferrer">Code</a>
             </div>
           </div>
           <div className={s.project_title}>
@@ -50,7 +53,7 @@ export const Projects = () => (
 
         <div className={s.project}>
           <div className={s.pic}>
-            <img className={s.pic_bg} src={counter} alt="react network"/>
+            <img className={s.pic_bg} src={counter} alt="react counter"/>
             <div className={s.links}>
               <a className={s.btn} href="#!">Demo</a>
               <a className={s.btn} href="#!">Code</a>
@@ -62,6 +65,22 @@ export const Projects = () => (
           <p className={s.project_description}>
             React, Redux, Typescript<br/>
             Local Storage <br/>
+          </p>
+        </div>
+
+        <div className={s.project}>
+          <div className={s.pic}>
+            <img className={s.pic_bg} src={piano} alt="javascript piano"/>
+            <div className={s.links}>
+              <a className={s.btn} href="https://rolling-scopes-school.github.io/vadzimka0-JSFE2021Q1/virtual-piano/" target="_blank" rel="noreferrer">Demo</a>
+              <a className={s.btn} href="https://github.com/rolling-scopes-school/vadzimka0-JSFE2021Q1/tree/virtual-piano" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </div>
+          <div className={s.project_title}>
+            <h4>Virtual Piano</h4>
+          </div>
+          <p className={s.project_description}>
+            Javascript
           </p>
         </div>
 

@@ -13,7 +13,7 @@ export const AboutMe = () => (
           <p>Hi, my name is<br/><span>Vadzim Dzianisik</span></p>
           <p>and i'm a<br/>
             <span>
-              <ReactTypingEffect text="Front-end Developer"/>
+              Front-end <ReactTypingEffect text=" Developer"/>
             </span>
           </p>
         </div>

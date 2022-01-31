@@ -15,7 +15,7 @@ export const Footer = () => (
           <a href="https://github.com/Vadzimka0" target="_blank" rel="noreferrer">
             <SiGithub/>
           </a>
-          <a href="#!" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/vadzim-dzianisik-843359230/" target="_blank" rel="noreferrer">
             <SiLinkedin/>
           </a>
           <a href="https://www.instagram.com/vadzik_dzianisik/" target="_blank" rel="noreferrer">

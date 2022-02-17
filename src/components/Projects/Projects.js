@@ -55,8 +55,8 @@ export const Projects = () => (
           <div className={s.pic}>
             <img className={s.pic_bg} src={counter} alt="react counter"/>
             <div className={s.links}>
-              <a className={s.btn} href="#!">Demo</a>
-              <a className={s.btn} href="#!">Code</a>
+              <a className={s.btn} href="https://vadzimka0.github.io/simple-counter/" target="_blank" rel="noreferrer">Demo</a>
+              <a className={s.btn} href="https://github.com/Vadzimka0/simple-counter" target="_blank" rel="noreferrer">Code</a>
             </div>
           </div>
           <div className={s.project_title}>
